@@ -1,0 +1,16 @@
+{
+  "name": "proxy-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Thiago Fonseca",
+  "license": "ISC",
+  "dependencies": {
+    "atob": "^2.0.3",
+    "express": "^4.13.4",
+    "fs": "0.0.2"
+  }
+}

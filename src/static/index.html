@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  <body>
+      <p>MNP</p>
+
+      jsessionid:
+      <input type="text" id="jsessionid" style="width:500px" />
+
+      <button type="button" onclick="go();">Go!</button>
+  </body>
+
+  <script>
+
+    function initElements() {
+        document.getElementById('jsessionid').value = 'http://www.YOUR.com.br/';
+    }
+
+    function go() {
+      jsessionid = document.getElementById('jsessionid').value;
+      jsessionid = btoa(btoa(jsessionid));
+
+      window.location = "http://localhost:8091/?jsessionid=" + jsessionid;
+    }
+
+    initElements();
+  </script>
+
+</html>
