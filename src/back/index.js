@@ -40,7 +40,7 @@ var server = http.createServer(function(client_req, client_res) {
       console.log(err);
     });
 
-  } else if (client_req.url.indexOf('index.html') > -1 || !client_req.url) {
+  } else if (client_req.url == "/") {
     console.log('I want the start page, please.');
 
     fs.readFile('src/static/index.html', 'binary', function(err, file) {
