@@ -61,4 +61,6 @@ var server = http.createServer(function(client_req, client_res) {
 
 var port = Number(process.env.PORT || 3000);
 
+console.log("The port is: " + port);
+
 server.listen(port);
